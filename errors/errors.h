@@ -1,5 +1,5 @@
-#ifndef _ERRORS_H
-#define _ERRORS_H
+#ifndef _ERRORS_PICO_H
+#define _ERRORS_PICO_H
 
 #ifdef _WIN32
 #undef ERROR_CANCELLED
