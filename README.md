@@ -1,5 +1,7 @@
 # Picotool for HaikuOS
 
+So basically a lot of this stuff compiles right off the bat on Haiku, but header guards are wack.
+
 ## TODO list
 
 - [x] Build on HaikuOS
