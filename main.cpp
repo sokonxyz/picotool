@@ -67,6 +67,10 @@ static __forceinline int __builtin_ctz(unsigned x) {
 }
 #endif
 
+#if defined(__HAIKU__)
+#include <kernel/OS.h>
+#endif
+
 // tsk namespace is polluted on windows
 #ifdef _WIN32
 #undef min
@@ -7849,6 +7853,8 @@ bool reboot_command::execute(device_map &devices) {
 static void sleep_ms(int ms) {
 #if defined(__unix__) || defined(__APPLE__)
     usleep(ms * 1000);
+#elif defined(__HAIKU__)
+    snooze(ms * 1000);
 #else
     Sleep(ms);
 #endif
