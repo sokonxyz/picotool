@@ -1,3 +1,5 @@
+# Picotool for HaikuOS
+
 ## Building
 
 You need to set PICO_SDK_PATH in the environment, or pass it to cmake with `-DPICO_SDK_PATH=/path/to/pico-sdk`. To use features such as signing or hashing, you will need to make sure the mbedtls submodule in the SDK is checked out - this can be done by running this from your SDK directory.
